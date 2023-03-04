@@ -1,0 +1,645 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Site Styles
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Buttons
+	#Forms
+	#Misc */
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+select {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* #Basic Styles
+================================================== */
+body {
+  background: #f9f9f9;
+  font-family: "Josefin Slab", serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #414141;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-text-size-adjust: 100%;
+}
+html {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body:before,
+body:after {
+  content: "";
+  position: fixed;
+  background: #ffffff;
+  left: 0;
+  right: 0;
+  height: 40px;
+  z-index: 1000;
+}
+body:before {
+  top: 0;
+}
+body:after {
+  bottom: 0;
+}
+/* body {
+    border-left: 40px solid #080808;
+    border-right: 40px solid #080808;  
+} */
+
+/* #Typography
+================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #212121;
+  font-family: "NexaLight";
+  text-align: center;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-weight: inherit;
+}
+h1 {
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 34px;
+  line-height: 34px;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+h5 {
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+h6 {
+  font-family: "NexaBold";
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+p img {
+  margin: 0;
+}
+p.lead {
+  font-size: 21px;
+  line-height: 27px;
+  color: #777;
+}
+
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: 600;
+}
+small {
+  font-size: 80%;
+}
+
+/*	Blockquotes  */
+blockquote,
+blockquote p {
+  font-size: 17px;
+  line-height: 24px;
+  color: #777;
+}
+blockquote {
+  margin: 0 0 20px;
+  padding: 9px 20px 0 19px;
+}
+blockquote cite {
+  display: block;
+  font-size: 12px;
+  color: #555;
+}
+blockquote cite:before {
+  content: "\2014 \0020";
+}
+blockquote cite a,
+blockquote cite a:visited,
+blockquote cite a:visited {
+  color: #555;
+}
+
+hr {
+  border: solid #323a3d;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 0 10px 0 10px;
+  height: 0;
+  position: relative;
+}
+
+/* #Links
+================================================== */
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #e74c3c;
+}
+p a,
+p a:visited {
+  line-height: inherit;
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+
+/* #Lists
+================================================== */
+ul,
+ol {
+}
+ul {
+  list-style: none outside;
+}
+ol {
+  list-style: decimal;
+}
+ol,
+ul.square,
+ul.circle,
+ul.disc {
+  margin-left: 30px;
+}
+ul.square {
+  list-style: square outside;
+}
+ul.circle {
+  list-style: circle outside;
+}
+ul.disc {
+  list-style: disc outside;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  font-size: 90%;
+}
+ul ul li,
+ul ol li,
+ol ol li,
+ol ul li {
+}
+li {
+  line-height: 18px;
+}
+ul.large li {
+  line-height: 21px;
+}
+li p {
+  line-height: 21px;
+}
+/* #Buttons
+================================================== */
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  background: #363636;
+  margin-top: 10px;
+  border: none;
+  color: #dfdfdf;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  line-height: normal;
+  padding: 15px 25px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  width: 100%;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  color: #e74c3c;
+  background: #292929;
+}
+
+.button:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
+  color: #e74c3c;
+}
+
+.button.full-width,
+button.full-width,
+input[type="submit"].full-width,
+input[type="reset"].full-width,
+input[type="button"].full-width {
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: center;
+}
+
+/* Fix for odd Mozilla border & padding issues */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/* #Images
+================================================== */
+
+/* #Misc
+================================================== */
+.remove-bottom {
+  margin-bottom: 0 !important;
+}
+.half-bottom {
+  margin-bottom: 10px !important;
+}
+.add-bottom {
+  margin-bottom: 20px !important;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+::selection {
+  color: #fff;
+}
+::-moz-selection {
+  color: #fff;
+}
+
+/* Testimonies */
+.card_container {
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card {
+  height: 280px;
+  max-width: 350px;
+  margin: 0 20px;
+  font-family: "Inconsolata";
+  background: white;
+  transition: 0.4s;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+  height: fit-content;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.card .img {
+  height: 300px;
+  width: 100%;
+}
+.card .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card .top-text {
+  padding: 5px;
+  font-family: "Inconsolata";
+}
+.card .top-text .name {
+  font-size: 25px;
+  font-weight: 600;
+  color: #202020;
+  font-family: "Inconsolata";
+}
+.card .top-text p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #5f0101;
+  line-height: 20px;
+  font-family: "Inconsolata";
+}
+.card .bottom-text {
+  padding: 0 20px 10px 20px;
+  margin-top: 5px;
+  background: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+  font-family: "Inconsolata";
+}
+.card:hover .bottom-text {
+  opacity: 1;
+  visibility: visible;
+  font-family: "Inconsolata";
+}
+.card .bottom-text .text {
+  text-align: justify;
+  font-family: "Inconsolata";
+}
+.card .bottom-text .btn {
+  margin: 10px 0;
+  text-align: left;
+  font-family: "Inconsolata";
+}
+.card .bottom-text .btn a {
+  text-decoration: none;
+  background: #5f0101;
+  color: #f2f2f2;
+  padding: 5px 8px;
+  border-radius: 3px;
+  display: inline-flex;
+  transition: 0.2s;
+  font-family: "Inconsolata";
+}
+.card .bottom-text .btn a:hover {
+  transform: scale(0.9);
+}
+@media screen and (max-width: 978px) {
+  .card_container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: "Inconsolata";
+  }
+  .card {
+    max-width: 700px;
+    margin: 20px 0;
+  }
+}
+
+/* our section */
+.section-lead {
+  max-width: 600px;
+  margin: 1rem auto 1.5rem;
+}
+
+.service a {
+  color: #5b7abb;
+  display: block;
+}
+
+.service h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #56ceba;
+  font-size: 1.3vw;
+  margin: 1rem 0 0.6rem;
+}
+
+.services-grid {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.service {
+  background: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  -webkit-box-flex: 1;
+  flex: 1;
+  width: 33.33%;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #e7e7e7;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.service ul li {
+  list-style-type: disc;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Roboto";
+  margin-left: 25px;
+}
+.service:hover {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+.service i {
+  font-size: 3.45rem;
+  margin: 1rem 0;
+}
+
+.service i,
+.service h4,
+.service .cta {
+  color: #42b7ca;
+}
+
+.service1:hover,
+.service2:hover,
+.service3:hover,
+.service4:hover,
+.service5:hover,
+.service6:hover,
+.service7:hover {
+  background-color: #42b7ca;
+  color: #ffffff;
+}
+.service:hover h4 {
+  color: #5f0101;
+}
+
+.service .cta span {
+  font-size: 0.6rem;
+}
+
+.service > * {
+  flex: 1 1 100%;
+}
+
+.service .cta {
+  align-self: flex-end;
+}
+
+@media all and (max-width: 900px) {
+  .services-grid {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+}
