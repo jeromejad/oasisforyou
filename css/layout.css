@@ -230,11 +230,6 @@ body.royal_loader {
 	margin:0 auto;
 	z-index:500;
 }
-#menu-wrap1 ul li a:hover{
-	color: #ffffff;
-	padding-bottom: 5px;
-	border-bottom: 2px solid #F9690E;
-}
 #menu-wrap .menu-container  {
 	position:relative;
 	width:calc(100% - 40px);
